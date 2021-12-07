@@ -10,8 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -24,11 +25,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse/src/assets" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse/src/pages/Map" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\pages\Map" />
+      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\components" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\assets" />
     </key>
   </component>
@@ -45,10 +49,37 @@
       <workItem from="1638706890805" duration="3145000" />
       <workItem from="1638754526057" duration="12166000" />
       <workItem from="1638791521113" duration="7124000" />
+      <workItem from="1638841374793" duration="14380000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="289" y="145" key="EditFileWatcherDialog" timestamp="1638843912809">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="289" y="145" key="EditFileWatcherDialog/0.0.1366.738@0.0.1366.738" timestamp="1638843912809" />
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1638842133379">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1638842133379" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1638842133378">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1638842133378" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1638842133378">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1638842133378" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1638842133379">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1638842133379" />
+    <state x="396" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1638844372012">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="396" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1638844372012" />
   </component>
 </project>

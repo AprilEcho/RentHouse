@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    /* 去掉 轮播图 Chrome浏览器的错误警告 */
+    touch-action: pan-y;
+
+}
+
 html,
 body {
     margin: 0;
@@ -5,13 +12,6 @@ body {
     font-family: 'Microsoft YaHei';
     color: #333;
     background-color: #fff;
-}
-
-* {
-    box-sizing: border-box;
-    /* 去掉 轮播图 Chrome浏览器的错误警告 */
-    touch-action: pan-y;
-
 }
 
 h1,

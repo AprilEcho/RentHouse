@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Carousel, Flex} from 'antd-mobile';
+import {Carousel, Flex, Grid, WingBlank} from 'antd-mobile';
 
 import axios from "axios";
 
@@ -9,7 +9,11 @@ import Nav2 from '../../assets/images/nav-2.png'
 import Nav3 from '../../assets/images/nav-3.png'
 import Nav4 from '../../assets/images/nav-4.png'
 
-import './index.css'
+import './index.scss'
+
+// 导入搜索导航栏组件
+import SearchHeader from '../../components/SearchHeader'
+
 // 导航菜单数据
 const navs = [
   {
@@ -38,11 +42,23 @@ const navs = [
   }
 ]
 
+//获取地理位置信息
+// navigator.geolocation.getCurrentPosition(position => {
+//   console.log(position)
+// })
+
 class Index extends Component {
   state = {
     //轮播图状态数据
     swipers: [],
-    isSwiperLoaded: false
+    isSwiperLoaded: false,
+    //租房小组数据
+    groups: [],
+    //最新资讯
+    news: [],
+    // 当前城市名称
+    curCityName: '上海'
+
   }
   //获取轮播图数据
   getSwipers = async () => {
@@ -56,9 +72,49 @@ class Index extends Component {
     })
   }
 
+  //获取租房小组数据
+  getGroups = async () => {
+    const res = await axios.get('http://localhost:8080/home/groups', {
+      params: {
+        area: 'area=AREA%7C88cff55c-aaa4-e2e0'
+      }
+    })
+    this.setState({
+      groups: res.data.body
+    })
+  }
+
+  //获取最新资讯
+  async getNews() {
+    const res = await axios.get(
+      'http://localhost:8080/home/news?area=AREA%7C88cff55c-aaa4-e2e0'
+    )
+
+    this.setState({
+      news: res.data.body
+    })
+  }
+
   componentDidMount() {
     //获取数据
     this.getSwipers();
+
+    //获取租房小组数据
+    this.getGroups();
+
+    //获取最新数据
+    this.getNews()
+
+    //获取当前城市名称
+    var myCity = new window.BMapGL.LocalCity();
+    myCity.get( async res=>{
+      // console.log(res)
+      const result = await axios.get(`http://localhost:8080/area/info?name=${res.name}`)
+      // console.log(result)
+      this.setState({
+        curCityName:result.data.body.label
+      })
+    });
   }
 
   //渲染轮播图结构
@@ -90,6 +146,28 @@ class Index extends Component {
     ))
   }
 
+  // 渲染最新资讯
+  renderNews() {
+    return this.state.news.map(item => (
+      <div className="news-item" key={item.id}>
+        <div className="imgwrap">
+          <img
+            className="img"
+            src={`http://localhost:8080${item.imgSrc}`}
+            alt=""
+          />
+        </div>
+        <Flex className="content" direction="column" justify="between">
+          <h3 className="title">{item.title}</h3>
+          <Flex className="info" justify="between">
+            <span>{item.from}</span>
+            <span>{item.date}</span>
+          </Flex>
+        </Flex>
+      </div>
+    ))
+  }
+
   render() {
     return (
       <div className="index">
@@ -101,11 +179,46 @@ class Index extends Component {
                 {this.renderSwipers()}
               </Carousel> : ''
           }
+          {/* 搜索框 */}
+          <SearchHeader cityName={this.state.curCityName} />
         </div>
         {/*导航菜单*/}
         <Flex className="nav">
           {this.renderNav()}
         </Flex>
+
+        {/* 租房小组 */}
+        <div className="group">
+          <h3 className="group-title">
+            租房小组 <span className="more">更多</span>
+          </h3>
+
+          {/* 宫格组件 */}
+          <Grid
+            data={this.state.groups}
+            columnNum={2}
+            // 不设置为正方形
+            square={false}
+            // 是否有边框
+            hasLine={false}
+            renderItem={item => (
+              <Flex className="group-item" justify="around" key={item.id}>
+                <div className="desc">
+                  <p className="title">{item.title}</p>
+                  <span className="info">{item.desc}</span>
+                </div>
+                <img src={`http://localhost:8080${item.imgSrc}`} alt=""/>
+              </Flex>
+            )}
+          />
+        </div>
+
+        {/* 最新资讯 */}
+        <div className="news">
+          <h3 className="group-title">最新资讯</h3>
+          <WingBlank size="md">{this.renderNews()}</WingBlank>
+        </div>
+
       </div>
     );
   }

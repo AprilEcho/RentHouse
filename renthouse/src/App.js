@@ -1,10 +1,8 @@
 import React from 'react'
-import {Route, Link, Redirect} from 'react-router-dom'
+import {Route, Redirect} from 'react-router-dom'
 import CityList from "./pages/CityList";
 import Home from "./pages/Home";
-
-import {Button} from "antd-mobile";
-
+import Map from "./pages/Map";
 function App() {
   return (
     <div className="App">
@@ -15,6 +13,7 @@ function App() {
       <Route exact path="/" render={() => <Redirect to="/home"/>}/>
       <Route path="/home" component={Home}/>
       <Route path="/citylist" component={CityList}/>
+      <Route path="/map" component={Map}/>
     </div>
   );
 }
