@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 
 import './index.scss'
 
+
 function NavHeader({children, history, onLeftClick}) {
   const defaultHeader = () => history.go(-1)
   return (
