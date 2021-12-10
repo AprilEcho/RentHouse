@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+
+import NavHeader from "../../components/NavHeader";
+
 import './index.scss'
 class Map extends Component {
   componentDidMount() {
@@ -13,6 +16,11 @@ class Map extends Component {
   render() {
     return (
       <div className="map">
+        <NavHeader
+          // onLeftClick={()=>{console.log('点击左侧按钮')}}
+        >
+          地图找房
+        </NavHeader>
         {/*地图容器*/}
         <div id="container"/>
       </div>

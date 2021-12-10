@@ -9,6 +9,8 @@ import Nav2 from '../../assets/images/nav-2.png'
 import Nav3 from '../../assets/images/nav-3.png'
 import Nav4 from '../../assets/images/nav-4.png'
 
+import {getCurrentCity} from "../../utils";
+
 import './index.scss'
 
 // 导入搜索导航栏组件
@@ -95,7 +97,7 @@ class Index extends Component {
     })
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     //获取数据
     this.getSwipers();
 
@@ -106,15 +108,19 @@ class Index extends Component {
     this.getNews()
 
     //获取当前城市名称
-    var myCity = new window.BMapGL.LocalCity();
-    myCity.get( async res=>{
-      // console.log(res)
-      const result = await axios.get(`http://localhost:8080/area/info?name=${res.name}`)
-      // console.log(result)
-      this.setState({
-        curCityName:result.data.body.label
-      })
-    });
+    // var myCity = new window.BMapGL.LocalCity();
+    // myCity.get( async res=>{
+    //   // console.log(res)
+    //   const result = await axios.get(`http://localhost:8080/area/info?name=${res.name}`)
+    //   // console.log(result)
+    //   this.setState({
+    //     curCityName:result.data.body.label
+    //   })
+    // });
+    const curCity = await getCurrentCity()
+    this.setState({
+      curCityName:curCity.label
+    })
   }
 
   //渲染轮播图结构
