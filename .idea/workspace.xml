@@ -10,9 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -31,15 +31,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse/src/components/NavHeader" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse/src/pages/Map" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\pages\Map" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\components\NavHeader" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\components" />
-      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\pages\Map" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\assets" />
     </key>
   </component>
@@ -61,7 +61,7 @@
       <workItem from="1639015594056" duration="12001000" />
       <workItem from="1639052093111" duration="4949000" />
       <workItem from="1639102476877" duration="2623000" />
-      <workItem from="1639106788512" duration="941000" />
+      <workItem from="1639106788512" duration="9755000" />
     </task>
     <servers />
   </component>

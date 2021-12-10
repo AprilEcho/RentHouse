@@ -6,14 +6,14 @@ import {withRouter} from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
-import './index.scss'
-
+// import './index.scss'
+import styles from './index.module.css'
 
 function NavHeader({children, history, onLeftClick}) {
   const defaultHeader = () => history.go(-1)
   return (
     <NavBar
-      className="navbar"
+      className={styles.navBar}
       mode="light"
       icon={<i className="iconfont icon-back"/>}
       onLeftClick={onLeftClick || defaultHeader}
