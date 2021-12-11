@@ -1,13 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react'
 
-class News extends Component {
+export default class News extends React.Component {
   render() {
     return (
-      <div>
-        资讯
+      <div style={{ backgroundColor: 'green' }}>
+        这是 News组件 的内容，它是子路由的内容
       </div>
-    );
+    )
   }
 }
-
-export default News;

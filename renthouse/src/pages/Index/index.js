@@ -15,6 +15,7 @@ import './index.scss'
 
 // 导入搜索导航栏组件
 import SearchHeader from '../../components/SearchHeader'
+import {BASE_URL} from "../../utils/url";
 
 // 导航菜单数据
 const navs = [
@@ -119,7 +120,7 @@ class Index extends Component {
     // });
     const curCity = await getCurrentCity()
     this.setState({
-      curCityName:curCity.label
+      curCityName: curCity.label
     })
   }
 
@@ -133,7 +134,7 @@ class Index extends Component {
           style={{display: 'inline-block', width: '100%', height: 212}}
         >
           <img
-            src={`http://localhost:8080${item.imgSrc}`}
+            src={BASE_URL + item.imgSrc}
             alt=""
             style={{width: '100%', verticalAlign: 'top'}}
           />
@@ -186,7 +187,7 @@ class Index extends Component {
               </Carousel> : ''
           }
           {/* 搜索框 */}
-          <SearchHeader cityName={this.state.curCityName} />
+          <SearchHeader cityName={this.state.curCityName}/>
         </div>
         {/*导航菜单*/}
         <Flex className="nav">

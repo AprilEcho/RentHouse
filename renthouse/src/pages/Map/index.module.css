@@ -6,7 +6,7 @@
 .container {
   height: 100%;
 }
-/*navvar样式*/
+
 .map :global(.am-navbar) {
   margin-top: -45px;
 }
@@ -78,6 +78,7 @@
   transition: all 1s;
   transform: translate3d(0, 330px, 0);
   background: #fff;
+  z-index: 99;
 }
 
 .show {

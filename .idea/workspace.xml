@@ -31,16 +31,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse/src/pages/Map" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\pages\Map" />
-      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\components\NavHeader" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\components" />
-      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\assets" />
+      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\utils" />
+      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\components\NavHeader" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -61,7 +62,11 @@
       <workItem from="1639015594056" duration="12001000" />
       <workItem from="1639052093111" duration="4949000" />
       <workItem from="1639102476877" duration="2623000" />
-      <workItem from="1639106788512" duration="9755000" />
+      <workItem from="1639106788512" duration="10397000" />
+      <workItem from="1639135882963" duration="5325000" />
+      <workItem from="1639188908728" duration="3557000" />
+      <workItem from="1639192925298" duration="2393000" />
+      <workItem from="1639201105819" duration="6214000" />
     </task>
     <servers />
   </component>
@@ -73,25 +78,29 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="289" y="145" key="EditFileWatcherDialog/0.0.1366.738@0.0.1366.738" timestamp="1638843912809" />
-    <state width="1345" height="110" key="GridCell.Tab.0.bottom" timestamp="1639108658285">
+    <state width="1345" height="110" key="GridCell.Tab.0.bottom" timestamp="1639121406744">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="110" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1639108658285" />
-    <state width="1345" height="110" key="GridCell.Tab.0.center" timestamp="1639108658285">
+    <state width="1345" height="110" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1639121406744" />
+    <state width="1345" height="110" key="GridCell.Tab.0.center" timestamp="1639121406743">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="110" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1639108658285" />
-    <state width="1345" height="110" key="GridCell.Tab.0.left" timestamp="1639108658285">
+    <state width="1345" height="110" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1639121406743" />
+    <state width="1345" height="110" key="GridCell.Tab.0.left" timestamp="1639121406742">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="110" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1639108658285" />
-    <state width="1345" height="110" key="GridCell.Tab.0.right" timestamp="1639108658285">
+    <state width="1345" height="110" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1639121406742" />
+    <state width="1345" height="110" key="GridCell.Tab.0.right" timestamp="1639121406743">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="110" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1639108658285" />
+    <state width="1345" height="110" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1639121406743" />
     <state x="396" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1638844372012">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="396" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1638844372012" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1639207066543">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1639207066543" />
   </component>
 </project>

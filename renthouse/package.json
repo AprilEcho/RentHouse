@@ -28,7 +28,15 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "generator-star-spacing": "off",
+      "no-tabs":"off",
+      "no-unused-vars":"off",
+      "no-console":"off",
+      "no-irregular-whitespace":"off",
+      "no-debugger": "off"
+    }
   },
   "browserslist": {
     "production": [
