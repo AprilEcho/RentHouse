@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Route} from "react-router-dom";
+import './index.css'
 import News from "../News";
 import HouseList from "../HouseList";
 import Profile from "../Profile";
@@ -7,7 +8,7 @@ import Index from "../Index";
 // 导入TabBar
 import {TabBar} from 'antd-mobile'
 
-import './index.css'
+
 
 
 // TabBar 数据
