@@ -4,6 +4,7 @@ import CityList from "./pages/CityList";
 import Home from "./pages/Home";
 import Map from "./pages/Map";
 import HouseDetail from "./pages/HouseDetail";
+import Login from "./pages/Login";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
       <Route path="/map" component={Map}/>
       {/* 房源详情的路由规则： */}
       <Route path="/detail/:id" component={HouseDetail} />
+      <Route path="/login" component={Login} />
     </div>
   );
 }

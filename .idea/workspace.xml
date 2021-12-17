@@ -10,9 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -31,17 +31,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse/src/pages/HouseList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/renthouse/src/pages/Login" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\pages\Login" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\pages\HouseList" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\pages\Map" />
       <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\components" />
-      <recent name="E:\react资料\黑马react项目\RentHouse\renthouse\src\utils" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -75,7 +75,8 @@
       <workItem from="1639718931365" duration="460000" />
       <workItem from="1639719740724" duration="275000" />
       <workItem from="1639720177888" duration="425000" />
-      <workItem from="1639721623874" duration="2891000" />
+      <workItem from="1639721623874" duration="11326000" />
+      <workItem from="1639745523515" duration="1975000" />
     </task>
     <servers />
   </component>
@@ -111,5 +112,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1639207066543" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1639746110020">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1639746110020" />
   </component>
 </project>
