@@ -3,6 +3,7 @@ import {Route, Redirect} from 'react-router-dom'
 import CityList from "./pages/CityList";
 import Home from "./pages/Home";
 import Map from "./pages/Map";
+import HouseDetail from "./pages/HouseDetail";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,8 @@ function App() {
       <Route path="/home" component={Home}/>
       <Route path="/citylist" component={CityList}/>
       <Route path="/map" component={Map}/>
+      {/* 房源详情的路由规则： */}
+      <Route path="/detail/:id" component={HouseDetail} />
     </div>
   );
 }

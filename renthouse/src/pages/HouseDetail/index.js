@@ -6,9 +6,9 @@ import NavHeader from '../../components/NavHeader'
 import HouseItem from '../../components/HouseItem'
 import HousePackage from '../../components/HousePackage'
 
-// import { BASE_URL } from '../../utils/url'
-// import { API } from '../../utils/api'
-import { isAuth, BASE_URL, API } from '../../utils'
+import { BASE_URL } from '../../utils/url'
+import { API } from '../../utils/api'
+import { isAuth} from '../../utils/auth'
 
 import styles from './index.module.css'
 
@@ -41,7 +41,7 @@ const recommendHouses = [
 ]
 
 // 百度地图
-const BMap = window.BMap
+const BMap = window.BMapGL
 
 const labelStyle = {
   position: 'absolute',
