@@ -7,6 +7,9 @@ import HouseDetail from "./pages/HouseDetail";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import AuthRoute from "./components/AuthRoute";
+import Rent from "./pages/Rent";
+import RentAdd from "./pages/Rent/Add";
+import RentSearch from "./pages/Rent/Search";
 function App() {
   return (
     <div className="App">
@@ -22,6 +25,10 @@ function App() {
       <Route path="/detail/:id" component={HouseDetail} />
       <Route path="/login" component={Login} />
       <Route path="/profile" component={Profile}/>
+      {/*配置登陆后才能访问的页面*/}
+      <AuthRoute exact path="/rent" component={Rent}></AuthRoute>
+      <AuthRoute path="/rent/add" component={RentAdd}></AuthRoute>
+      <AuthRoute path="/rent/search" component={RentSearch}></AuthRoute>
     </div>
   );
 }

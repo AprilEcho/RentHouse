@@ -11,7 +11,7 @@ import {
   Toast
 } from 'antd-mobile'
 
-import { API } from '../../../utils'
+import { API } from '../../../utils/api'
 
 import NavHeader from '../../../components/NavHeader'
 import HousePackge from '../../../components/HousePackage'

@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 import { SearchBar } from 'antd-mobile'
 
-import { getCity, API } from '../../../utils'
-
+import {API } from '../../../utils/api'
+import {getCity} from "../../../utils/city";
 import styles from './index.module.css'
 
 export default class Search extends Component {
