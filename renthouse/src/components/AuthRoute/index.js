@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
-import { isAuth } from '../../utils'
+import { isAuth } from '../../utils/auth'
 
 /* 
   封装 AuthRoute 鉴权路由组件：
